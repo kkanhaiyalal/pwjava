@@ -1,0 +1,36 @@
+1. What is statically typed and dynamically typed Programming Languages?
+Ans: Statically typed programming languages require variable types to be declared at compile time and perform type checking before the program runs. Dynamically typed languages determine variable types at runtime and perform type checking during program execution.
+
+2. What is the variable in Java?
+Ans: In Java, a variable is a named storage location that holds data. It can represent different types of data, such as numbers, text, or objects. Variables are used to store and manipulate information in a program.
+
+3. How to Assign a Value to a Variable?
+Ans: To assign a value to a variable in Java, you use the assignment operator (=). For example, to assign the value 10 to a variable named x,
+int x = 10;
+
+4. What are Primitive Data Types in Java?
+Ans: Primitive data types in Java represent simple, built-in data types. They include int, float, boolean, char, and others. They store single values and have predefined sizes and behavior in the language.
+
+5. What are the Identifiers in Java?
+Ans: Identifiers in Java are names used for various program elements, such as variables, classes, methods, and interfaces. They must adhere to certain naming rules, such as starting with a letter, being case-sensitive, and not being Java keywords.
+
+6. List the Operators in Java?
+Ans: Java supports various types of operators, including:
+Arithmetic Operators (+, -, *, /, %)
+Relational Operators (>, <, >=, <=, ==, !=)
+Logical Operators (&&, ||, !)
+Assignment Operators (=, +=, -=, *=, /=, %=)
+Bitwise Operators (&, |, ^, ~, <<, >>, >>>)
+Conditional (Ternary) Operator (?:)
+Increment and Decrement Operators (++, --)
+
+7. Explain about Increment and Decrement Operators and give examples:
+Ans: Increment (++) and Decrement (--) operators are used to increase or decrease the value of a variable by 1. They can be used as prefix or postfix operators. 
+int x = 5;
+int y = x++; // y is assigned the value of x (5), then x is incremented to 6
+int z = ++x; // x is incremented to 7, then z is assigned the value of x (7)
+After these operations, y will be 5, and z will be 7.
+
+
+
+
