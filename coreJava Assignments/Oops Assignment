@@ -1,0 +1,27 @@
+1. How to Create an Object in Java?
+Ans: In Java, you create an object using the new keyword followed by the class name and constructor parameters (if any). For example:
+ClassName objectName = new ClassName();
+
+2. What is the use of a keyword in Java?
+Ans: In Java, the new keyword is used to allocate memory and create an instance of a class. It initializes the object and returns a reference to it.
+
+3. What are the different types of variables in Java?
+Ans: In Java, variables can be categorized into three types:
+
+Instance Variables: These are non-static fields declared within a class but outside any method.
+Local Variables: These are variables declared within a method, constructor, or block.
+Static Variables (Class Variables): These are variables declared with the static keyword and exist for the entire run-time of a class.
+
+4. What is the difference between Instance variables and Local variables?
+Ans: The primary difference lies in their scope and lifespan.
+
+Instance variables are initialized when an object is created and exist throughout the life of the object.
+Local variables are created when a method, constructor, or block is entered and are destroyed when the method, constructor, or block exits.
+
+5. In which area memory is allocated for Instance variables and local variables?
+Ans:
+Instance variables are stored in the heap memory and are part of the object they belong to.
+Local variables are stored in the stack memory and exist within the method, constructor, or block scope.
+
+6. What is method overloading?
+Ans: Method overloading in Java refers to the ability to have multiple methods in the same class with the same name but with different parameters. The methods must differ in the number or types of their parameters. It enables creating methods with the same name performing different tasks.
