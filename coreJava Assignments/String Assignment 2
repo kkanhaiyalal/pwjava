@@ -1,0 +1,52 @@
+1) Write a simple string program to take input from the user.
+
+import java.util.Scanner;
+
+public class UserInput {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String input = scanner.nextLine();
+        System.out.println("You entered: " + input);
+        scanner.close();
+    }
+}
+
+2) How do you concatenate two strings in Java? Give an example.
+
+String firstString = "Hello";
+String secondString = "World";
+String combinedString = firstString + secondString;
+System.out.println("Concatenated String: " + combinedString);
+
+3) How do you find the length of a string in Java explain with an example?
+
+String text = "Example";
+int length = text.length();
+System.out.println("Length of the string: " + length);
+
+4) How do you compare two strings in Java? Provide an example.
+
+String str1 = "Hello";
+String str2 = "Hello";
+boolean areEqual = str1.equals(str2);
+System.out.println("Are the strings equal? " + areEqual);
+
+5) Write a program to find the length of the string "refrigerator"?
+
+String word = "refrigerator";
+int length = word.length();
+System.out.println("Length of 'refrigerator': " + length);
+
+6) Write a program to check if the letter 'e' is present in the word "umbrella"?
+
+String word = "umbrella";
+boolean isPresent = word.contains("e");
+System.out.println("Is 'e' present? " + isPresent);
+
+7) Write a program to delete all consonants from the string "Hello have a good day".
+
+String str = "Hello have a good day";
+String result = str.replaceAll("[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]", "");
+System.out.println("Result after deletion: " + result);
+
