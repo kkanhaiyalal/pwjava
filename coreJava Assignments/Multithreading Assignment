@@ -1,0 +1,31 @@
+1. What do you mean by Multithreading? Why is it important?
+Answer: Multithreading is a programming concept where multiple threads execute concurrently within a single process. Each thread represents an independent flow of execution, allowing programs to perform multiple tasks simultaneously. It's crucial for improving system resource utilization, enhancing responsiveness in applications, and supporting efficient execution of tasks.
+
+2. What are the benefits of using Multithreading?
+Answer: Some benefits of using multithreading include:
+
+Improved Performance: Utilizes CPU resources more efficiently.
+Enhanced Responsiveness: Allows applications to remain responsive during time-consuming operations.
+Resource Sharing: Facilitates the sharing of resources among multiple threads.
+Parallelism: Enables concurrent execution of tasks, improving overall throughput.
+Modularity: Easier management and maintenance of complex systems.
+
+3. What is Thread in Java?
+Answer: In Java, a thread represents an independent path of execution within a program. It's a lightweight process that shares memory and resources with other threads in the same process. Threads are instances of the java.lang.Thread class or are created by implementing the java.lang.Runnable interface.
+
+4. What are the two ways of implementing thread in Java?
+Answer: There are two ways to implement threads in Java:
+
+Extending Thread class: By extending the Thread class and overriding its run() method.
+Implementing Runnable interface: By implementing the Runnable interface and providing the implementation for the run() method.
+
+5. What's the difference between thread and process?
+Answer: A thread is the smallest unit of execution within a process and shares resources like memory and files with other threads in the same process. A process, on the other hand, is a self-contained unit that runs independently, has its own memory space, and contains one or more threads.
+
+6. How can we create daemon threads?
+Answer: In Java, daemon threads are created by calling the setDaemon(true) method before starting the thread. Daemon threads are meant to provide services to other threads and are terminated when all non-daemon threads have completed.
+
+7. What are the wait() and sleep() methods?
+Answer:
+wait(): A method in Java that causes the current thread to wait until another thread invokes the notify() or notifyAll() method for the same object.
+sleep(): A method in Java used to pause the execution of the current thread for a specified amount of time. It temporarily relinquishes the CPU, allowing other threads to execute.
