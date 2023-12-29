@@ -1,0 +1,30 @@
+1. What is a Constructor?
+Ans: A constructor in Java is a special method within a class that has the same name as the class itself. It is automatically invoked when an object of that class is created. Its primary purpose is to initialize the newly created object. Constructors do not have return types, not even void.
+
+2. What is Constructor Chaining?
+Ans: Constructor chaining in Java refers to the process of calling one constructor from another within the same class using this() or super() keyword. It helps in reusing constructor code and helps in achieving code consistency.
+
+3. Can we call a subclass constructor from a superclass constructor?
+Ans: No, a subclass constructor cannot be directly called from a superclass constructor. However, the superclass constructor is automatically invoked before the subclass constructor. This happens implicitly, using super().
+
+4. What happens if you keep a return type for a constructor?
+Ans: Constructors do not have a return type, not even void. If you explicitly declare a return type for a constructor, it will be treated as a regular method and won't act as a constructor. This will lead to a compilation error.
+
+5. What is No-arg constructor?
+Ans: A no-arg constructor, also known as a no-argument constructor, is a constructor that doesn't take any parameters. It is a constructor with no arguments.
+
+6. How is a No-argument constructor different from the default Constructor?
+Ans: There's no difference between a no-argument constructor and a default constructor. If no constructors are explicitly defined in a class, Java automatically provides a no-argument constructor (default constructor).
+
+7. When do we need Constructor Overloading?
+Ans: Constructor overloading is useful when you want to create multiple constructors within a class, each accepting different parameters. This allows objects to be initialized in various ways using different sets of parameters.
+
+8. What is Default constructor Explain with an Example
+Ans: A default constructor is provided by Java if no constructors are explicitly defined in a class. It initializes the object with default values. For example:
+
+public class Example {
+    // Default constructor provided by Java
+    public Example() {
+        // Constructor code
+    }
+}
