@@ -1,0 +1,66 @@
+Question 1:
+The time complexity of the provided Java code is O(n^2). To improve it, consider the purpose of the inner loop. As it stands, it doesn't perform any operations; it's an empty loop. If possible, reconsider the logic within the loops to make it more meaningful. Otherwise, removing the inner loop would significantly enhance the code's efficiency.
+
+Question 2:
+Given the recurrence relation: T(n) = 3T(n-1) + 12n with T(0) = 5.
+The value of T(2) can be found as follows:
+T(2) = 3T(1) + 12(2)
+= 3[3T(0) + 12(1)] + 12(2)
+= 3[35 + 12] + 24
+= 3[15 + 12] + 24
+= 327 + 24
+= 81 + 24
+= 105
+
+Question 3:
+The given recurrence relation is: T(n) = T(n-1) + c.
+Using substitution method:
+T(n) = T(n-1) + c
+= [T(n-2) + c] + c
+= T(n-2) + 2c
+= T(n-3) + 3c
+...
+= T(n-k) + kc
+
+For the base case where k = n:
+T(0) = T(n - n) + nc
+= T(0) + nc
+= c + nc
+= c(1 + n)
+
+Question 4:
+Given recurrence relation: T(n) = 16T(n/4) + n^2logn.
+By the Master Theorem, this is a case of:
+
+a = 16
+b = 4
+f(n) = n^2logn
+Comparing f(n) to n^c, where c = log_b(a):
+Here, c = log_4(16) = 2.
+f(n) = n^2logn = n^(c log n).
+This falls into case 3 of the Master Theorem.
+
+Therefore, the time complexity is O(n^2 log^2 n).
+
+Question 5:
+Using the Recursion Tree method for T(n) = 2T(n/2) + n:
+
+
+          T(n)
+         /    \
+     T(n/2) + n/2
+    /       \
+T(n/4)+n/4  T(n/4)+n/4
+
+In each level, the cost is n. There are log(n) levels. Therefore, the total cost is O(n log n).
+
+Question 6:
+For T(n) = 2T(n/2) + K using the Recurrence Tree method:
+
+
+        T(n)
+       /   \
+  T(n/2)+K T(n/2)+K
+    / \
+ T(n/4)+K T(n/4)+K
+The cost at each level is K. There are log(n) levels. Therefore, the total cost is O(K log n).
