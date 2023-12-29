@@ -1,0 +1,33 @@
+1. What is an interface in Java?
+Answer: In Java, an interface is a blueprint of a class that contains only abstract methods, constants, and default methods. It provides a contract specifying how classes implementing the interface should behave. It enables multiple inheritance by allowing classes to implement multiple interfaces.
+
+2. Which modifiers are allowed for methods in an Interface? Explain with an example
+Answer: In an interface, the only allowed modifiers for methods are public and default. All methods in an interface are public by default, and since Java 8, interfaces can have default methods that provide default implementations.
+
+Example:
+public interface MyInterface {
+    public void regularMethod(); // Public method
+    default void defaultMethod() { // Default method
+        System.out.println("Default implementation of defaultMethod");
+    }
+}
+
+3. What is the use of interface in Java? Or, why do we use an interface in Java?
+Answer: Interfaces in Java provide a way to achieve abstraction and multiple inheritance. They allow for the specification of a set of methods that a class must implement, ensuring consistency across various implementing classes. Interfaces also support code reusability and flexibility in design.
+
+4. What is the difference between abstract class and interface in Java?
+Answer:
+Abstract class:
+Can have both abstract and non-abstract methods.
+Can have instance variables.
+Supports constructor declaration.
+Supports access specifiers like private, protected, etc.
+Supports inheritance using the extends keyword.
+Interface:
+Contains only abstract methods (until Java 8, with default methods introduced).
+Can't have instance variables (except constants).
+Doesn't support constructors.
+All methods are implicitly public.
+Supports multiple inheritance using the implements keyword.
+
+Both serve as blueprints for classes to implement common functionalities, but interfaces promote loose coupling and allow for multiple inheritance, while abstract classes provide a level of implementation and can hold shared functionality among subclasses.
