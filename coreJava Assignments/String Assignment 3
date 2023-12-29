@@ -1,0 +1,199 @@
+1. WAP to remove duplicates from a String:
+
+// Remove duplicates from a String
+public class RemoveDuplicatesFromString {
+    public static void main(String[] args) {
+        String input = "example with duplicates";
+        String result = removeDuplicates(input);
+        System.out.println("String after removing duplicates: " + result);
+    }
+
+    public static String removeDuplicates(String input) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < input.length(); i++) {
+            char current = input.charAt(i);
+            if (input.indexOf(current) == i) {
+                result.append(current);
+            }
+        }
+        return result.toString();
+    }
+}
+
+2. WAP to print duplicate characters from the String:
+
+// Print duplicate characters from a String
+public class PrintDuplicateCharacters {
+    public static void main(String[] args) {
+        String input = "example with duplicates";
+        findDuplicates(input);
+    }
+
+    public static void findDuplicates(String input) {
+        System.out.print("Duplicate characters in the string: ");
+        for (int i = 0; i < input.length(); i++) {
+            char current = input.charAt(i);
+            if (input.indexOf(current) != input.lastIndexOf(current)) {
+                System.out.print(current + " ");
+                input = input.replace(current, ' '); // Marking found duplicates to avoid repetitive printing
+            }
+        }
+    }
+}
+
+3. WAP to check if "2552" is a palindrome or not:
+
+// Check if a string is a palindrome
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        String input = "2552";
+        boolean isPalindrome = isPalindrome(input);
+        System.out.println("Is '2552' a palindrome? " + isPalindrome);
+    }
+
+    public static boolean isPalindrome(String input) {
+        return input.equals(new StringBuilder(input).reverse().toString());
+    }
+}
+
+4. WAP to count the number of consonants, vowels, and special characters in a String:
+
+// Count consonants, vowels, and special characters
+public class CountCharacters {
+    public static void main(String[] args) {
+        String input = "Counting chars! 123";
+        countCharacters(input);
+    }
+
+    public static void countCharacters(String input) {
+        int vowels = 0, consonants = 0, special = 0;
+        String lowerCaseInput = input.toLowerCase();
+        for (int i = 0; i < input.length(); i++) {
+            char ch = lowerCaseInput.charAt(i);
+            if (ch >= 'a' && ch <= 'z') {
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                    vowels++;
+                } else {
+                    consonants++;
+                }
+            } else {
+                special++;
+            }
+        }
+        System.out.println("Vowels: " + vowels);
+        System.out.println("Consonants: " + consonants);
+        System.out.println("Special Characters: " + special);
+    }
+}
+
+5. WAP to implement Anagram Checking with the least inbuilt methods being used:
+
+// Check if two strings are anagrams
+public class AnagramCheck {
+    public static void main(String[] args) {
+        String str1 = "listen";
+        String str2 = "silent";
+        boolean areAnagrams = checkAnagram(str1, str2);
+        System.out.println("Are '" + str1 + "' and '" + str2 + "' anagrams? " + areAnagrams);
+    }
+
+    public static boolean checkAnagram(String str1, String str2) {
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+
+        int[] frequency = new int[256]; // Assuming ASCII characters
+        for (int i = 0; i < str1.length(); i++) {
+            frequency[str1.charAt(i)]++;
+            frequency[str2.charAt(i)]--;
+        }
+
+        for (int count : frequency) {
+            if (count != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+6. WAP to implement Pangram Checking with the least inbuilt methods being used:
+
+// Check if a string is a pangram
+public class PangramCheck {
+    public static void main(String[] args) {
+        String input = "The quick brown fox jumps over the lazy dog";
+        boolean isPangram = checkPangram(input);
+        System.out.println("Is the input a pangram? " + isPangram);
+    }
+
+    public static boolean checkPangram(String input) {
+        boolean[] visited = new boolean[26];
+        int index;
+        for (int i = 0; i < input.length(); i++) {
+            char current = input.charAt(i);
+            if ('A' <= current && current <= 'Z') {
+                index = current - 'A';
+            } else if ('a' <= current && current <= 'z') {
+                index = current - 'a';
+            } else {
+                continue; // Skip characters other than alphabets
+            }
+            visited[index] = true;
+        }
+
+        for (boolean value : visited) {
+            if (!value) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+7. WAP to find if a String contains all unique characters:
+
+// Check if a string contains all unique characters
+public class UniqueCharacters {
+    public static void main(String[] args) {
+        String input = "abcde";
+        boolean hasUniqueCharacters = checkUniqueCharacters(input);
+        System.out.println("Does the string have all unique characters? " + hasUniqueCharacters);
+    }
+
+    public static boolean checkUniqueCharacters(String input) {
+        for (int i = 0; i < input.length(); i++) {
+            char current = input.charAt(i);
+            if (input.indexOf(current) != input.lastIndexOf(current)) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+8. WAP to find the maximum occurring character in a String:
+
+// Find the maximum occurring character in a String
+public class MaxOccurringCharacter {
+    public static void main(String[] args) {
+        String input = "maximum occurring character";
+        char maxOccurring = findMaxOccurringCharacter(input);
+        System.out.println("Maximum occurring character: " + maxOccurring);
+    }
+
+    public static char findMaxOccurringCharacter(String input) {
+        int[] frequency = new int[256]; // Assuming ASCII characters
+        int maxFrequency = 0;
+        char maxChar = '\u0000'; // Default value for char
+
+        for (char c : input.toCharArray()) {
+            frequency[c]++;
+            if (frequency[c] > maxFrequency) {
+                maxFrequency = frequency[c];
+                maxChar = c;
+            }
+        }
+        return maxChar;
+    }
+}
