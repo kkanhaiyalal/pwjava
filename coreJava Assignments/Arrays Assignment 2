@@ -1,0 +1,27 @@
+1. What is the default value of Array for different data types?
+Ans: In Java, the default values for array elements are determined by their data types. For primitives like int, the default is 0, for boolean it's false, and for objects, it's null.
+
+2. Can you access the negative number in Array size?
+Ans: In programming languages, an array's size represents the number of elements and can't be negative as it doesn't make logical sense to have a negative count of elements.
+
+3. Where does Array stored in JVM memory?
+Ans: Arrays in Java are stored in the heap memory, following the same memory allocation rules as other objects.
+
+4. What are the disadvantages of Array?
+Ans: Arrays in many programming languages have fixed sizes once created. Modifying their size involves creating a new array and copying elements, which can be inefficient. Additionally, arrays lack built-in methods for easy manipulation.
+
+5. What is an Anonymous Array in Java? Give an example.
+Ans: An anonymous array in Java is one without a specific name, created for immediate use. Example:
+
+int[] numbers = {1, 2, 3}; // Anonymous array creation
+
+6. What are the different ways to traverse an Array in Java?
+Ans: In Java, arrays can be traversed using for loops, enhanced for loops, while loops, or even using Java 8 streams with lambda expressions.
+
+7. What is the difference between length and length() methods? Give an Example.
+Ans: In Java, length is an array attribute representing the size of the array. length() is a method used for strings to get their length. Example:
+
+int[] numbers = {1, 2, 3};
+System.out.println(numbers.length); // Prints the array size
+String str = "Hello";
+System.out.println(str.length()); // Prints the string length
