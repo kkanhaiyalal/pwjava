@@ -1,0 +1,39 @@
+1. What is a Map in Java?
+Answer: A Map in Java is an interface that maps keys to values, representing a collection of key-value pairs. Each key is unique and is used to retrieve the corresponding value. It doesn't allow duplicate keys and can have null values but only one null key (in certain implementations).
+
+2. What are the commonly used implementations of Map in Java?
+Answer: Common implementations of the Map interface in Java include:
+
+HashMap: Uses hash table data structure for storing key-value pairs.
+TreeMap: Stores keys in a sorted (natural order or custom) format using a Red-Black tree.
+LinkedHashMap: Maintains insertion order and allows null keys/values.
+
+3. What is the difference between HashMap and TreeMap?
+Answer:
+HashMap: Provides constant-time performance for basic operations (get, put, remove). It doesn't maintain order.
+TreeMap: Maintains keys in a sorted (natural or custom) order. Operations like get, put, remove have O(log n) time complexity.
+
+4. How do you check if a key exists in a Map in Java?
+Answer: You can use the containsKey(Object key) method to check if a key exists in a Map. It returns true if the Map contains the specified key, otherwise false.
+
+5. What are Generics in Java?
+Answer: Generics in Java allow classes and methods to be parameterized by data type(s). They enable the creation of classes, interfaces, and methods that operate on any data type, providing compile-time type safety.
+
+6. What are the benefits of using Generics in Java?
+Answer: Benefits of using Generics include:
+
+Type Safety: Detects errors at compile time, reducing the likelihood of runtime errors.
+Code Reusability: Enables writing generic algorithms and data structures that can work with any data type.
+Eliminates Type Casting: Avoids explicit type casting, making code cleaner and safer.
+
+7. What is a Generic Class in Java?
+Answer: A Generic Class in Java is a class that has one or more type parameters. It can work with any data type specified during its instantiation. For example, ArrayList<E> is a generic class where E is the type parameter representing the element type.
+
+8. What is a Type Parameter in Java Generics?
+Answer: A Type Parameter in Java Generics represents a placeholder for a data type. It's specified in angle brackets (<>) when using a generic class or method. For instance, in ArrayList<E>, E is the type parameter.
+
+9. What is a Generic Method in Java?
+Answer: A Generic Method in Java is a method that is parameterized by one or more type parameters. It can work with any data type and is declared with angle brackets before the return type.
+
+10. What is the difference between ArrayList and ArrayList?
+Answer: Apologies for the repetition in the question. It seems both parts of the question refer to the same entity. If it's about ArrayList specifically, it represents a resizable array that grows dynamically, providing random access and allowing duplicate elements. 
