@@ -1,0 +1,59 @@
+1.- What is Encapsulation in Java? Why is it important?
+Ans: Encapsulation in Java refers to the bundling of data (attributes) and methods that operate on the data into a single unit, called a class. It helps in data hiding, providing control over data access, and prevents unauthorized access. Encapsulation also aids in maintaining the integrity of data.
+
+2.- What are the important features of Encapsulation?
+Ans: Key features of encapsulation in Java include:
+
+Data Hiding: Restricting access to certain parts of the object.
+Access Modifiers: Controlling the visibility of variables and methods.
+Getters and Setters: Providing controlled access to class variables.
+
+3.- What are Getter and Setter Methods in Java? Explain with an example.
+Ans: Getter methods retrieve the value of a private variable, and setter methods modify the value of a private variable. They help maintain data integrity by controlling access to class variables.
+
+Example:
+public class Example {
+    private int number;
+
+    public int getNumber() {
+        return number; // Getter
+    }
+
+    public void setNumber(int num) {
+        this.number = num; // Setter
+    }
+}
+
+4.- What is the use of the 'this' keyword? Explain with an example.
+Ans: In Java, the 'this' keyword refers to the current instance of the class. It's used to differentiate between class variables and method parameters or to invoke current class constructors.
+
+Example:
+public class Example {
+    private int number;
+
+    public Example(int number) {
+        this.number = number; // 'this' differentiates between class variable and parameter
+    }
+}
+
+5.- What is the Advantage of Encapsulation?
+Ans: The primary advantage of encapsulation is data protection. It restricts direct access to the data, allowing modification only through well-defined methods, enhancing security and preventing unintended modifications.
+
+6.- How to Achieve Encapsulation in Java? Give an example.
+Ans: Achieving encapsulation in Java involves:
+
+Declaring variables as private.
+Providing public methods (getters and setters) to access and modify those variables.
+Example:
+
+public class EncapsulationExample {
+    private int data;
+
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int newData) {
+        this.data = newData;
+    }
+}
