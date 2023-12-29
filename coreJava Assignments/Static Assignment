@@ -1,0 +1,34 @@
+Q1: Why do we know about the static keyword in Java? Explain with an example.
+Ans: The static keyword in Java is used for creating methods and variables that belong to the class rather than any specific instance. An example of a static method:
+
+public class Example {
+    public static int square(int num) {
+        return num * num;
+    }
+
+    public static void main(String[] args) {
+        int result = Example.square(5);
+        System.out.println("Square of 5: " + result);
+    }
+}
+
+Q2: What is static block loading and how does the Java program actually execute?
+Ans: Static block loading in Java refers to the initialization of static variables or execution of static blocks when the class is loaded into memory by the JVM, even before the creation of any objects or instances of that class.
+
+Q3: Can we declare a local variable as static?
+Ans: No, we cannot declare local variables as static in Java. The static keyword is used for class-level variables and methods, not for local variables within methods.
+
+Q4: Why do we need a main method in Java?
+Ans: The main method in Java serves as the entry point for a Java program. It's where the program starts its execution when it's run. Without a main method, the Java Virtual Machine (JVM) wouldn't know where to start the program.
+
+Q5: Why is a method called a local method?
+Ans: In Java, a method is called a local method if it's declared within another method. These methods are only accessible within the method they are defined in.
+
+Q6: What is the purpose of the static keyword in Java?
+Ans: The static keyword in Java is used to create variables, methods, or blocks that belong to the class itself rather than instances of the class. They are associated with the class rather than any specific object.
+
+Q7: Differences between Static and Instance Variables?
+Ans: Static variables belong to the class and are shared among all instances of that class, while instance variables are unique to each instance of the class.
+
+Q8: Differences between Static and Non-Static Methods?
+Ans: Static methods belong to the class and can be called without creating an instance of the class, while non-static methods are associated with instances of the class and require an object to be called.
