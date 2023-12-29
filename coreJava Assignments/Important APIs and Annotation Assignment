@@ -1,0 +1,64 @@
+1. Program to display current date and time in Java
+import java.util.Date;
+
+public class DateTimeExample {
+    public static void main(String[] args) {
+        // Creating a Date object
+        Date currentDate = new Date();
+        // Displaying current date and time
+        System.out.println("Current Date and Time: " + currentDate);
+    }
+}
+
+2. Write a program to convert a date to a string in the format "MM/dd/yyyy".
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateToStringExample {
+    public static void main(String[] args) {
+        // Creating a Date object
+        Date currentDate = new Date();
+        // Formatting date to the desired format
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+        String formattedDate = sdf.format(currentDate);
+        // Displaying the formatted date
+        System.out.println("Formatted Date: " + formattedDate);
+    }
+}
+
+3. What is the difference between collections and streams? Explain with an Example.
+Answer: Collections are in-memory data structures that store and manipulate a group of objects, allowing CRUD operations. Streams, introduced in Java 8, are a sequence of elements that can be processed in a declarative way, enabling functional-style operations on collections.
+
+Example:
+Collections:
+List<String> names = new ArrayList<>();
+names.add("Alice");
+names.add("Bob");
+names.add("Charlie");
+
+Streams:
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+names.stream()
+     .filter(name -> name.startsWith("A"))
+     .forEach(System.out::println);
+
+4. What is enums in Java? Explain with an example.
+Answer: Enums in Java are a special data type that allows a variable to hold a predefined set of constants. They provide a way to create a collection of related constants.
+
+Example:
+public enum Day {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+// Using the enum constants
+Day today = Day.MONDAY;
+System.out.println("Today is: " + today);
+
+5. What are inbuilt annotations in Java?
+Answer: Java provides several inbuilt annotations, such as:
+
+@Override: Indicates that a method overrides a superclass method.
+@Deprecated: Marks that a method or class is deprecated.
+@SuppressWarnings: Suppresses compiler warnings for specific situations.
+@FunctionalInterface: Declares that an interface is a functional interface.
