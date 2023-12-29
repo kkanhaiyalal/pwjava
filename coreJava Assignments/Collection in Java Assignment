@@ -1,0 +1,32 @@
+1. What is the Collection framework in Java?
+Answer: The Collection framework in Java is a unified architecture that provides various interfaces, classes, and algorithms to manipulate and store groups of objects. It includes interfaces like List, Set, Map, and their implementing classes, offering functionalities for data manipulation.
+
+2. What is the difference between ArrayList and LinkedList?
+Answer:
+ArrayList: Implements a dynamic array, allowing fast random access but slower insertion/deletion at non-end locations.
+LinkedList: Implements a doubly linked list, allowing faster insertion/deletion but slower random access.
+
+3. What is the difference between Iterator and ListIterator?
+Answer:
+Iterator: It allows sequential access to elements in a collection. It only allows forward traversal and can be used with any collection class.
+ListIterator: It extends Iterator and is specific to lists. It allows bidirectional traversal (forward and backward) and provides methods for adding, modifying, and retrieving elements.
+
+4. What is the difference between Iterator and Enumeration?
+Answer:
+Iterator: Introduced in Java 1.2, it's an improved version of Enumeration and has more functionalities. It's fail-safe (avoids ConcurrentModificationException) and supports both removal and addition of elements.
+Enumeration: An older interface introduced in Java 1.0, used to iterate legacy collections. It's not fail-safe and only supports read-only access to elements.
+
+5. What is the difference between List and Set?
+Answer:
+List: Allows duplicate elements and maintains the insertion order. It allows positional access and is index-based.
+Set: Doesn't allow duplicate elements and doesn't maintain any order (elements are unordered).
+
+6. What is the difference between HashSet and TreeSet?
+Answer:
+HashSet: Implements the Set interface using a hash table. It doesn't maintain any order of elements.
+TreeSet: Implements the NavigableSet interface using a Red-Black tree. It maintains elements in sorted order.
+
+7. What is the difference between Array and ArrayList?
+Answer:
+Array: Represents a fixed-size, ordered collection of elements of the same data type. The size of an array is fixed and determined at the time of creation.
+ArrayList: Implements List interface and is dynamic. It's a resizable array that grows automatically as elements are added and shrinks when elements are removed.
